@@ -6,33 +6,22 @@
 Код написан под перезапуск gogoc но может быть легко переделан под другие нужды.
 
 Необходимо файлу дать права на исполнение:
-
-`chmod +x IfDownTun.sh`
+```chmod +x IfDownTun.sh```
 
 И сделать запись в “cron” для автоматического запуска скрипта по расписанию:
+```sudo nano /etc/crontab```
 
-`sudo nano /etc/crontab`
-
-`# Test if iface tun is down
-
-*/3 *   * * *   root    /home/IfDownTun.sh`
+```# Test if iface tun is down
+*/3 *   * * *   root    /home/IfDownTun.sh```
 
 Сценарий также пишет логи в /var/log/iface_tun.log
 
 В таком формате:
-
-`2014-03-18(02:51) iface tun DOWN
-
+```2014-03-18(02:51) iface tun DOWN
 2014-03-19(16:45) iface tun UP
-
 2014-03-19(16:48) iface tun DOWN
-
 2014-03-20(16:21) iface tun UP
-
 2014-03-20(22:57) iface tun DOWN
-
 2014-03-20(22:57) iface tun UP
-
 2014-03-21(14:51) iface tun DOWN
-
-2014-03-21(14:51) iface tun UP`
+2014-03-21(14:51) iface tun UP```
