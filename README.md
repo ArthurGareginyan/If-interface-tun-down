@@ -14,6 +14,7 @@
 `sudo nano /etc/crontab`
 
 `# Test if iface tun is down
+
 */3 *   * * *   root    /home/IfDownTun.sh`
 
 Сценарий также пишет логи в /var/log/iface_tun.log
@@ -25,8 +26,13 @@
 2014-03-19(16:45) iface tun UP
 
 2014-03-19(16:48) iface tun DOWN
+
 2014-03-20(16:21) iface tun UP
+
 2014-03-20(22:57) iface tun DOWN
+
 2014-03-20(22:57) iface tun UP
+
 2014-03-21(14:51) iface tun DOWN
-2014-03-21(14:51) iface tun UP``
+
+2014-03-21(14:51) iface tun UP`
